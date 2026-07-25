@@ -78,7 +78,7 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        <h1 className="max-w-4xl text-[2.6rem] font-semibold leading-[1.08] tracking-tight text-frost sm:text-6xl md:text-7xl">
+        <h1 className="max-w-4xl text-[2.5rem] font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
           {["Building Software"].map((line, i) => (
             <motion.span
               key={line}
@@ -104,7 +104,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-7 max-w-2xl text-base leading-relaxed text-mist sm:text-lg"
+          className="mt-8 max-w-2xl text-base leading-8 text-gray-300 sm:text-lg md:text-xl"
         >
           Hi, I&apos;m <span className="text-frost">Ayan Saeed</span>, a passionate Full
           Stack Developer specializing in modern web applications using React,
@@ -117,12 +117,12 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 flex w-full flex-col items-center gap-4 sm:flex-row sm:w-auto"
         >
           <MagneticButton
             as="button"
             onClick={() => scrollToSection("projects")}
-            className="btn-primary"
+            className="btn-primary w-full sm:w-auto"
           >
             View My Projects
             <ArrowRight size={16} />
@@ -130,7 +130,7 @@ export default function Hero() {
           <MagneticButton
             as="button"
             onClick={() => scrollToSection("contact")}
-            className="btn-ghost"
+            className="btn-ghost w-full sm:w-auto"
           >
             <Mail size={16} />
             Contact Me
@@ -141,18 +141,18 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="mt-16 grid w-full max-w-lg grid-cols-3 gap-6 border-t border-white/10 pt-8"
+          className="mt-16 grid w-full max-w-2xl grid-cols-1 gap-4 border-t border-white/10 pt-8 sm:grid-cols-3 sm:gap-6 md:mt-24"
         >
           {[
             { value: "6+", label: "Projects Shipped" },
             { value: "10+", label: "Technologies" },
             { value: "100%", label: "Commitment" },
           ].map((stat) => (
-            <div key={stat.label}>
-              <p className="text-2xl font-semibold text-frost sm:text-3xl">
+            <div key={stat.label} className="flex flex-col items-center rounded-2xl bg-white/[0.02] p-4 border border-white/5 sm:items-start sm:bg-transparent sm:p-0 sm:border-none">
+              <p className="text-3xl font-bold text-white sm:text-3xl md:text-4xl">
                 {stat.value}
               </p>
-              <p className="mt-1 text-xs text-mist sm:text-sm">{stat.label}</p>
+              <p className="mt-1 text-sm text-gray-400 font-medium">{stat.label}</p>
             </div>
           ))}
         </motion.div>

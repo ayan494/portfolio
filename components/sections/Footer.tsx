@@ -63,7 +63,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+9203142412744" className="hover:text-frost">
+                <a href="tel:+92031242412744" className="hover:text-frost">
                   {siteConfig.phone}
                 </a>
               </li>

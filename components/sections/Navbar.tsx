@@ -35,10 +35,9 @@ export default function Navbar() {
       >
         <button
           onClick={() => handleNav("#home")}
-          className="font-mono text-sm font-semibold tracking-tight text-frost sm:text-base"
+          className="font-mono text-base font-bold tracking-tight text-white transition-colors duration-300 hover:text-[#4F7EFF] sm:text-lg"
         >
-          <span className="text-signal-400">&lt;</span>Ayan Saeed
-          <span className="text-signal-400">/&gt;</span>
+          AYANSAEED
         </button>
 
         <ul className="hidden items-center gap-1 lg:flex">

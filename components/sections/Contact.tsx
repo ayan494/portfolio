@@ -12,7 +12,7 @@ import { siteConfig } from "@/data/site";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
-  { icon: Phone, label: "Phone", value: siteConfig.phone, href: "tel:+9203142412744" },
+  { icon: Phone, label: "Phone", value: siteConfig.phone, href: "tel:+92031242412744" },
   { icon: MapPin, label: "Location", value: siteConfig.location, href: undefined },
 ];
 
@@ -53,7 +53,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-28 sm:py-32">
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[380px] w-[600px] -translate-x-1/2 rounded-full bg-signal-600/15 blur-[130px]" aria-hidden="true" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[380px] w-[280px] sm:w-[600px] -translate-x-1/2 rounded-full bg-signal-600/15 blur-[100px] sm:blur-[130px]" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-6xl px-6 sm:px-8">
         <SectionHeading
