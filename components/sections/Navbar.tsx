@@ -68,7 +68,7 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-3 lg:flex">
           <a
-            href="/Ayan-Saeed-Resume.pdf"
+            href="/Ayan-Saeed.pdf"
             download
             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-4 py-2 text-sm font-medium text-frost transition-all duration-300 hover:border-white/30 hover:bg-white/[0.06]"
           >
@@ -120,7 +120,7 @@ export default function Navbar() {
             </ul>
             <div className="mt-3 flex flex-col gap-2 border-t border-white/10 pt-3">
               <a
-                href="/Ayan-Saeed-Resume.pdf"
+                href="/Ayan-Saeed.pdf"
                 download
                 className="btn-ghost w-full !py-2.5 text-sm"
               >

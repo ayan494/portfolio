@@ -7,7 +7,7 @@ export type Project = {
   stack: string[];
   liveUrl: string;
   githubUrl: string;
-  variant: "canvas" | "noirwood" | "shopify" | "househub" | "nexcant" | "lumina";
+  variant: "canvas" | "noirwood" | "shopify" | "househub" | "nexcant" | "lumina" | "visionflow";
   year: string;
   category: string;
 };
@@ -97,4 +97,25 @@ export const projects: Project[] = [
     year: "2024",
     category: "Product Showcase",
   },
+   {
+  id: "visionflow-ai",
+  index: "07",
+  title: "VisionFlow AI",
+  tagline: "Premium AI SaaS platform with futuristic glassmorphism UI",
+  description:
+    "A premium AI SaaS landing page featuring a futuristic glassmorphism interface, smooth animations, interactive sections, and a fully responsive design. Built to deliver a modern startup experience with elegant visuals, immersive user interactions, and high-performance frontend architecture.",
+  stack: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Glassmorphism",
+    "GSAP",
+    "Responsive Design"
+  ],
+  liveUrl: "https://ayan494.github.io/VisionFlow-AI/",
+  githubUrl: "https://github.com/ayan494/VisionFlow-AI",
+  variant: "visionflow",
+  year: "2026",
+  category: "AI SaaS Landing Page",
+},
 ];
