@@ -7,7 +7,7 @@ export type Project = {
   stack: string[];
   liveUrl: string;
   githubUrl: string;
-  variant: "canvas" | "noirwood" | "shopify" | "househub" | "nexcant" | "lumina" | "visionflow";
+  variant: "canvas" | "noirwood" | "shopify" | "househub" | "nexcant" | "lumina" | "visionflow" | "adsense";
   year: string;
   category: string;
 };
@@ -118,4 +118,30 @@ export const projects: Project[] = [
   year: "2026",
   category: "AI SaaS Landing Page",
 },
+
+
+{
+  id: "adsense-tools",
+  index: "08",
+  title: "Adsense Tools",
+  tagline: "Free AI-Powered AdSense Tools & SEO Utilities",
+  description:
+    "Adsense Tools is a modern web platform that provides free AI-powered tools, SEO utilities, content optimization features, and productivity solutions for bloggers, content creators, developers, and digital marketers. Built with a fast, responsive, and user-friendly interface to help users improve website performance, SEO, and AdSense optimization.",
+  stack: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "TanStack Start",
+    "Supabase",
+    "Vercel"
+  ],
+  liveUrl: "https://adsense-liard.vercel.app/",
+  githubUrl: "https://github.com/ayan494/adsense",
+  variant: "adsense",
+  year: "2026",
+  category: "AI Tools & Productivity Platform",
+}
+
+
 ];

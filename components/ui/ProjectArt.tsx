@@ -5,7 +5,8 @@ type Variant =
   | "househub"
   | "nexcant"
   | "lumina"
-  | "visionflow";
+  | "visionflow"
+  | "adsense";
 
 const gradients: Record<Variant, { from: string; via: string; to: string }> = {
   canvas: { from: "#3E7BFA", via: "#8B7CFF", to: "#1E1A45" },
@@ -15,6 +16,7 @@ const gradients: Record<Variant, { from: string; via: string; to: string }> = {
   nexcant: { from: "#081428", via: "#1E48B3", to: "#5CE1FF" },
   lumina: { from: "#0B1020", via: "#3E7BFA", to: "#EAF0FB" },
   visionflow: { from: "#0A0D15", via: "#4F7EFF", to: "#131A2A" },
+  adsense: { from: "#1A202C", via: "#F56565", to: "#ED8936" },
 };
 
 export default function ProjectArt({
@@ -24,7 +26,7 @@ export default function ProjectArt({
   variant: Variant;
   title: string;
 }) {
-  const g = gradients[variant];
+  const g = gradients[variant] || gradients.canvas;
   const gradId = `grad-${variant}`;
   const glowId = `glow-${variant}`;
 
@@ -100,6 +102,13 @@ export default function ProjectArt({
           <circle cx="320" cy="200" r="120" fill="none" stroke="#4F7EFF" strokeOpacity="0.4" strokeWidth="1.5" />
           <rect x="240" y="140" width="160" height="120" rx="12" fill="#ffffff" fillOpacity="0.05" stroke="#ffffff" strokeOpacity="0.2" strokeWidth="1" />
           <path d="M280 180 L 360 180 L 320 220 Z" fill="#4F7EFF" fillOpacity="0.6" />
+        </g>
+      )}
+      {variant === "adsense" && (
+        <g opacity="0.85">
+          <rect x="200" y="180" width="60" height="120" rx="6" fill="#F56565" fillOpacity="0.7" />
+          <rect x="290" y="120" width="60" height="180" rx="6" fill="#ED8936" fillOpacity="0.7" />
+          <rect x="380" y="220" width="60" height="80" rx="6" fill="#ECC94B" fillOpacity="0.7" />
         </g>
       )}
 
